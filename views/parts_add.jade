@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    form.parts_form(action='/parts', method='post')
+        input(type='text', name='part_name', placeholder='Part name')
+        br
+        input(type='text', name='part_model', placeholder='Part model')
+        br
+        input(type='text', name='model_year', placeholder='Model year')
+        br
+        input(type='text', name='amount_in_stock', placeholder='Amount in stock')
+        br
+        input(type='text', name='manufacturer_name', placeholder='Manufacturer name')
+        br
+        input(type='text', name='manufacturer_street_address', placeholder='Manufacturer street address')
+        br
+        input(type='text', name='manufacturer_zip', placeholder='Manufacturer zip code')
+        br
+        input(type='text', name='manufacturer_city', placeholder='Manufacturer city')
+        br
+        input(type='text', name='manufacturer_phone_number', placeholder='Manufacturer phone number')
+        br
+        input(type='text', name='manufacturer_email', placeholder='Manufacturer email')
+        br
+        input(type='text', name='manufacturer_contact_person_name', placeholder='Manufacturer contact person name')
+        br
+        input(type='text', name='manufacturer_contact_person_email', placeholder='Manufacturer contact person email')
+        br
+        input(type='text', name='manufacturer_contact_person_phone_number', placeholder='Manufacturer contact person phone number')
+        br
+        input(type='submit', value='Save')
